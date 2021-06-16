@@ -32,7 +32,7 @@ function inputCountries(e) {
         refs.insertList.innerHTML = cardsTemplate(countries);
       } else if (countries.length > 10) {
         errorMessage('Too many matches found. Please enter a more specific query!');
-      } else if (GET === 404) {
+      } else if (countries.status === 404) {
         errorMessage('No country has been found. Please enter a more specific query!');
       }
     })
