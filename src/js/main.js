@@ -1,10 +1,8 @@
-const debounce = require('lodash.debounce');
+import debounce from 'lodash.debounce';
 
 import { error } from '@pnotify/core';
 import * as PNotifyAnimate from '@pnotify/animate';
 import { defaults } from '@pnotify/animate';
-const { defaults: coreDefaults } = require('@pnotify/core');
-coreDefaults.width = '400px';
 defaults.inClass = 'fadeInDown';
 defaults.outClass = 'fadeOutUp';
 import '@pnotify/core/dist/BrightTheme.css';
