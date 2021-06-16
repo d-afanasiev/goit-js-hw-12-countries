@@ -1,4 +1,5 @@
 .wrapper {
+  width: 800px;
   margin: 50px;
 }
 
@@ -6,4 +7,35 @@
   border-radius: 5px;
   padding: 10px;
   border-color: #333333;
+  width: 800px;
+}
+
+ul {
+  padding: 0 20px;
+}
+
+.wrapper-countrie {
+  display: flex;
+  justify-content: space-around;
+}
+
+.countrie-name {
+  text-align: center;
+  font-size: 40px;
+}
+
+.info-countire p {
+  font-weight: 700;
+}
+
+.info-countire span {
+  font-weight: 400;
+}
+
+.flag-countrie {
+  width: 500px;
+}
+
+.flag-countrie img {
+  width: inherit;
 }
