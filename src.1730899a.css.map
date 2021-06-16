@@ -1,1 +1,0 @@
-{"version":3,"sources":["sass/_example.scss"],"names":[],"mappings":"AAAA,SACE,YAGF,UACE,iBAAA,CACA,YAAA,CACA","file":"src.1730899a.css","sourceRoot":"../src","sourcesContent":[".wrapper {\r\n  margin: 50px;\r\n}\r\n\r\n.js-input {\r\n  border-radius: 5px;\r\n  padding: 10px;\r\n  border-color: #333333;\r\n}\r\n"]}
