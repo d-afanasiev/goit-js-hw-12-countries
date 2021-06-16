@@ -1,4 +1,4 @@
-# parcel-project-template
+# goit-js-hw-12-countries
 
 ## Зависимости
 

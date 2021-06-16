@@ -3,13 +3,13 @@ const debounce = require('lodash.debounce');
 
 const refs = {
   inputCountries: document.querySelector('.js-input'),
-  listContries: document.querySelector('.js-country'),
+  insertList: document.querySelector('.js-list'),
 };
 
 refs.inputCountries.addEventListener('input', debounce(inputCountries, 500));
 
 function inputCountries(e) {
-  refs.listContries.innerHTML = '';
+  refs.insertList.innerHTML = '';
   fetchCountries(e.target.value).then(countries => {
     console.log(countries.length);
     if (countries.length >= 2 && countries.length <= 10) {
@@ -18,8 +18,7 @@ function inputCountries(e) {
           return `<li>${countrie.name}</li>`;
         })
         .join('');
-      console.log(list);
-      refs.listContries.innerHTML = list;
+      refs.insertList.innerHTML = `<ul class="js-country">${list}</ul>`;
     }
   });
 }
