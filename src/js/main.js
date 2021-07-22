@@ -1,6 +1,6 @@
 import debounce from 'lodash.debounce';
 
-import Notiflix from 'notiflix';
+import { Notify } from 'notiflix';
 
 import cardsTemplate from '../partials/cards.hbs';
 import cardTemplate from '../partials/card.hbs';
@@ -37,9 +37,9 @@ function inputCountries(e) {
 }
 
 function infoMessage(message) {
-  Notiflix.Notify.info(message);
+  Notify.info(message);
 }
 
 function errorMessage(message) {
-  Notiflix.Notify.failure(message);
+  Notify.failure(message);
 }
