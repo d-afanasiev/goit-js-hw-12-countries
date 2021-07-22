@@ -40,3 +40,13 @@ ul {
   width: inherit;
   border: 1px solid #000;
 }
+
+.js-country li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.js-country img {
+  margin-right: 15px;
+}
